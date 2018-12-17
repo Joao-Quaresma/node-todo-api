@@ -1,0 +1,7 @@
+usefull commands:
+
+To start Node: npm start
+To start Mongo: sudo mongod --dbpath=/data
+To enter mongo: mongo
+Create new todo: url -X POST -d '{ "text": "Item something", "done": true }' --header "Content-Type: application/json" localhost:5000/todos
+Change todo: curl -X PUT -d '{ "text": "changed", "done": false }' --header "Content-Type: application/json" localhost:5000/todos/5c175e2791a05ff668d86e80
