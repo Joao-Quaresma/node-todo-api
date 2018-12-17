@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.set('useFindAndModify', false);
 
-const MONG_URL = process.env.MONGODB_URI || 'mongodb://localhost:27017/test'
+const MONGO_URL = process.env.MONGODB_URI || 'mongodb://localhost:27017'
 
 mongoose.connect(MONGO_URL, { useNewUrlParser: true });
 
